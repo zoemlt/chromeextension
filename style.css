@@ -1,0 +1,17 @@
+body {
+    margin: 0;
+    padding: 10px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+input {
+    border-color: #5f9341;
+    padding-left: 10px;
+}
+
+button {
+    background-color: #5f9341;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+}
