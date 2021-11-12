@@ -5,13 +5,19 @@ body {
 }
 
 input {
-    border-color: #5f9341;
-    padding-left: 10px;
+    width: 100%;
+    border: 1px solid #5f9341;
+    padding: 10px;
+    box-sizing: border-box;
+
 }
 
 button {
     background-color: #5f9341;
     color: white;
-    padding: 10px;
+    padding: 10px 20px;
     cursor: pointer;
+    margin-top: 4px;
+    border: none;
+    font-weight: bold;
 }
