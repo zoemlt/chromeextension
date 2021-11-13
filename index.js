@@ -20,8 +20,8 @@ function render(leads) {
                 </a>
             </li>
             `
-}
-ulEl.innerHTML = listItems;
+        }
+    ulEl.innerHTML = listItems;
 }
 
 inputBtn.addEventListener("click", function() {

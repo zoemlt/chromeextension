@@ -23,6 +23,10 @@ button {
     font-weight: bold;
 }
 
+button:hover {
+    text-decoration: underline;
+}
+
 #delete-btn {
     color: #5f9341;
     background-color: white;
