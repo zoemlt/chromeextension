@@ -11,10 +11,6 @@ if (leadsFromLocalStorage) {
     render(myLeads);
 }
 
-const tabs = [
-    {url: "https://www.w3schools.com/js/js_arrow_function.asp"}
-]
-
 function render(leads) {
     let listItems = "";
     for (let i = 0; i < leads.length; i++) {
@@ -37,10 +33,11 @@ inputBtn.addEventListener("click", function() {
 })
 
 tabBtn.addEventListener("click", function() {
-    myLeads.push(tabs[0].url);
-    inputEl.value = "";
-    localStorage.setItem("myLeads", JSON.stringify(myLeads));
-    render(myLeads);
+    chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
+        myLeads.push(tabs[0].url);
+        localStorage.setItem("myLeads", JSON.stringify(myLeads));
+        render(myLeads);
+    })
 })
 
 deleteBtn.addEventListener("dblclick", function() {
